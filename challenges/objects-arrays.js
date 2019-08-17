@@ -95,22 +95,15 @@ console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-// let uni = [];
-// function contains(item, list, cb) {
-//   return cb (list.includes (item));
-// }
 
-// contains ("University", graduates, function(school){
-//  uni.push (school);
-// })
-// console.log (uni());
-// const school = 'University';
+const uni = []
+graduates.forEach ( person => {
+  if (person.university.includes ("Uni")) {
+    uni.push (person.university)
+  }
+});
 
-// const uni = 
-// graduates.forEach ( person =>{
-//   return person.university.includes == "University";
-// })
-// console.log(uni);
+console.log(uni);
 
 
 
@@ -148,13 +141,13 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-// const lowerCase = [];
+const lowerCase = [];
 
-// zooAnimals.map(function(caps){
-//   lowerCase.push (`${caps.animal_name.toLowerCase()}`)
-// });
+zooAnimals.map(animal => {
+  lowerCase.push (`${animal.animal_name.toLowerCase()}`)
+});
 
-// console.log(lowerCase); 
+console.log(lowerCase); 
 
 /* Request 3: .filter() 
 
